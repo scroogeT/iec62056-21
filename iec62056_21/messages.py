@@ -4,7 +4,7 @@ import typing
 from iec62056_21.exceptions import Iec6205621ParseError, ValidationError
 from iec62056_21 import constants, utils
 
-ENCODING = "latin-1"
+ENCODING = "utf-8"
 
 
 # Regex to be used for parsing data. Compiled once for reuse later.
@@ -238,7 +238,7 @@ class CommandMessage(Iec6205621Data):
         else:
             _add_data = ""
         data_set = DataSet(value=_add_data, address=address)
-        return cls(command="R", command_type="1", data_set=data_set)
+        return cls(command="R", command_type="5", data_set=data_set)
 
     @classmethod
     def for_single_write(cls, address, value):

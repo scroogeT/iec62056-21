@@ -9,4 +9,4 @@ START_CHAR = "/"
 END_CHAR = "!"
 REQUEST_CHAR = "?"
 BREAK = f"{SOH}B0{ETX}"  # still need to calculate BCC
-ENCODING = "latin-1"
+ENCODING = "utf-8"  # latin-1

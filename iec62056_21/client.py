@@ -45,7 +45,7 @@ class Iec6205621Client:
         self,
         transport,
         device_address="",
-        password="00000000",
+        password="30003000",
         battery_powered=False,
         error_parser_class=exceptions.DummyErrorParser,
     ):
@@ -341,7 +341,7 @@ class Iec6205621Client:
         cls,
         port,
         device_address="",
-        password="00000000",
+        password="30003000",
         battery_powered=False,
         error_parser_class=exceptions.DummyErrorParser,
     ):
@@ -364,7 +364,7 @@ class Iec6205621Client:
         cls,
         address,
         device_address="",
-        password="00000000",
+        password="30003000",
         battery_powered=False,
         error_parser_class=exceptions.DummyErrorParser,
     ):

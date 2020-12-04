@@ -86,7 +86,7 @@ class BaseTransport:
             )
 
             if start_char == b"\x01":
-                # This is a command message, probably Password challange.
+                # This is a command message, probably Password challenge.
                 total_data += in_data
                 break
 
@@ -224,7 +224,7 @@ class SerialTransport(BaseTransport):
 
     TRANSPORT_REQUIRES_ADDRESS = False
 
-    def __init__(self, port: str, timeout: int = 10):
+    def __init__(self, port: str, timeout: int = 20):
 
         super().__init__(timeout=timeout)
         self.port_name: str = port
