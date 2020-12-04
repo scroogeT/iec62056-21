@@ -1,7 +1,9 @@
 from iec62056_21.client import Iec6205621Client
 from iec62056_21 import messages
 
-client = Iec6205621Client.with_serial_transport(port='/dev/ttyUSB0')
+# client = Iec6205621Client.with_serial_transport(port='/dev/ttyUSB0')
+# client = Iec6205621Client.with_tcp_transport(address=('10.230.1.78', 9500), device_address='16')
+client = Iec6205621Client.with_tcp_transport(address=('10.230.0.103', 9500), device_address='05607760', password='30003000')
 
 
 # Standard Readout
